@@ -1,5 +1,5 @@
 def validar_numero(cadena):
-    # Borra la instrucción pass y escribe aquí tu código
+    # Borra la instrucción pass y escribe aquí tu código.
     pass
 
 
