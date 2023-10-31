@@ -5,7 +5,7 @@
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
       "input": "123",
-      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*/i",
       "comparison": "regex",
       "timeout": 1,
       "points": 1
