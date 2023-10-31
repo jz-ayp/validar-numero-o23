@@ -1,0 +1,244 @@
+{
+  "tests": [
+    {
+      "name": "Test01: 123",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "123",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test02: 123.456",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "123.456",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test03: -123.456",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "-123.456",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test04: +123.456",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "+123.456",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test05: .123",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": ".123",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test06: +.123",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "+.123",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test07: -.123",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "-.123",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test08: .123+",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": ".123+",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test09: .123-",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": ".123-",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test10: 123.",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "123.",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test11: +123.",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "+123.",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test12: -123.",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "-123.",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test13: 123.+",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "123.+",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test14: 123.-",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "123.-",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test15: .",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": ".",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test16: -.",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "-.",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test17: .+",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": ".+",
+      "output": "^(?=.*(s\u00ed |si |True))(?!.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test18: 123 ",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "123 ",
+      "output": "^(?!.*(s\u00ed |si |True))(?=.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test19: abc",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "abc",
+      "output": "^(?!.*(s\u00ed |si |True))(?=.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test20: 1a23",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "1a23",
+      "output": "^(?!.*(s\u00ed |si |True))(?=.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test21: -123-",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "-123-",
+      "output": "^(?!.*(s\u00ed |si |True))(?=.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test22: +123-",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "+123-",
+      "output": "^(?!.*(s\u00ed |si |True))(?=.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test23: -1-2",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "-1-2",
+      "output": "^(?!.*(s\u00ed |si |True))(?=.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test24: 1.2.3",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python validar_numero.py",
+      "input": "1.2.3",
+      "output": "^(?!.*(s\u00ed |si |True))(?=.*(no |False)).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
