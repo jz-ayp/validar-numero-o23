@@ -35,6 +35,6 @@ def validar_numero(cadena):
 # Probar función
 cadena = input("Introduzca cadena a probar: ")
 if validar_numero(cadena):
-    print("La cadena sí cumple los requisitos.")
+    print("La cadena SÍ cumple los requisitos.")
 else:
-    print("La cadena no cumple los requisitos.")
+    print("La cadena NO cumple los requisitos.")
