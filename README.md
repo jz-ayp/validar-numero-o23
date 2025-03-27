@@ -1,4 +1,4 @@
-# Estructuras de decisión
+# Estructuras de repetición
 
 ## Ejercicio: Validar número real
 
