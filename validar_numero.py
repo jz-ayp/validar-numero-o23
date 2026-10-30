@@ -15,20 +15,19 @@ def validar_numero(cadena):
                 puntos += 1
                 if puntos > 1:
                     error = True
-                    break
             # Solo un signo
             elif caracter in "+-":
                 signos += 1
                 if signos > 1:
                     error = True
-                    break
                 # Y tiene que ir al principio o al final
                 if posicion != 0 and posicion != len(cadena) - 1:
                     error = True
-                    break
             else:
                 # Ningún otro carácter es válido
                 error = True
+        if error:
+            break
     return not error
 
 
