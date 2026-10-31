@@ -9,7 +9,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "123",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test02: 123.456",
@@ -18,7 +18,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "123.456",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test03: -123.456",
@@ -27,7 +27,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "-123.456",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test04: +123.456",
@@ -36,7 +36,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "+123.456",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test05: .123",
@@ -45,7 +45,7 @@
           "points": 1,
           "comparison": "regex",
           "input": ".123",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test06: +.123",
@@ -54,7 +54,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "+.123",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test07: -.123",
@@ -63,7 +63,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "-.123",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test08: .123+",
@@ -72,7 +72,7 @@
           "points": 1,
           "comparison": "regex",
           "input": ".123+",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test09: .123-",
@@ -81,7 +81,7 @@
           "points": 1,
           "comparison": "regex",
           "input": ".123-",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test10: 123.",
@@ -90,7 +90,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "123.",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test11: +123.",
@@ -99,7 +99,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "+123.",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test12: -123.",
@@ -108,7 +108,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "-123.",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test13: 123.+",
@@ -117,7 +117,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "123.+",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test14: 123.-",
@@ -126,7 +126,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "123.-",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test15: .",
@@ -135,7 +135,7 @@
           "points": 1,
           "comparison": "regex",
           "input": ".",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test16: -.",
@@ -144,7 +144,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "-.",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test17: .+",
@@ -153,7 +153,7 @@
           "points": 1,
           "comparison": "regex",
           "input": ".+",
-          "expected": "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+          "expected": "(?i)^(?=.*\\b(s[íi]|True)\\b)(?!.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test18: 123 ",
@@ -162,7 +162,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "123 ",
-          "expected": "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+          "expected": "(?i)^(?!.*\\b(s[íi]|True)\\b)(?=.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test19: abc",
@@ -171,7 +171,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "abc",
-          "expected": "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+          "expected": "(?i)^(?!.*\\b(s[íi]|True)\\b)(?=.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test20: 1a23",
@@ -180,7 +180,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "1a23",
-          "expected": "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+          "expected": "(?i)^(?!.*\\b(s[íi]|True)\\b)(?=.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test21: -123-",
@@ -189,7 +189,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "-123-",
-          "expected": "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+          "expected": "(?i)^(?!.*\\b(s[íi]|True)\\b)(?=.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test22: +123-",
@@ -198,7 +198,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "+123-",
-          "expected": "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+          "expected": "(?i)^(?!.*\\b(s[íi]|True)\\b)(?=.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test23: -1-2",
@@ -207,7 +207,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "-1-2",
-          "expected": "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+          "expected": "(?i)^(?!.*\\b(s[íi]|True)\\b)(?=.*\\b(no|False)\\b).*"
         },
         {
           "name": "Test24: 1.2.3",
@@ -216,7 +216,7 @@
           "points": 1,
           "comparison": "regex",
           "input": "1.2.3",
-          "expected": "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+          "expected": "(?i)^(?!.*\\b(s[íi]|True)\\b)(?=.*\\b(no|False)\\b).*"
         }
       ]
     }

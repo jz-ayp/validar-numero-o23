@@ -6,8 +6,8 @@ import json
 from pathlib import Path
 
 PROG_FILE = "validar_numero.py"
-YES_REGEX = "^(?=.*(sí |si |True))(?!.*(no |False)).*"
-NO_REGEX = "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+YES_REGEX = r"(?i)^(?=.*\b(s[íi]|True)\b)(?!.*\b(no|False)\b).*"
+NO_REGEX = r"(?i)^(?!.*\b(s[íi]|True)\b)(?=.*\b(no|False)\b).*"
 
 base_dir = Path(".")
 tests_file = base_dir / "solution" / "test_cases.json"
