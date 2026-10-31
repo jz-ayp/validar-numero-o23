@@ -20,14 +20,20 @@
    
 - Utiliza los siguientes ejemplos para dar formato a tus salidas:
   ```
-  Introduzca un número: -123
-  El texto introducido sí cumple con los requisitos
+  Introduzca un número: 12:30
+  No es un número válido
   
-  Introduzca un número: 123+
-  El texto introducido sí cumple con los requisitos
+  Introduzca un número: 3.14.16
+  No es un número válido
 
   Introduzca un número: +A12
-  El texto introducido no cumple con los requisitos
+  No es un número válido
+
+  Introduzca un número: +123+
+  No es un número válido
+
+  Introduzca un número: 1.50-
+  Sí es un número válido
   ```
   
 - Prueba tu programa corriéndolo varias veces con diferentes entradas. Verifica que tu algoritmo produzca las salidas correctas. Identifica y pon atención especial a los casos que pudieran ser problemáticos de manejar (casos límite).
@@ -40,11 +46,13 @@ Completa éste y el resto de los ejercicios y compila, para cada uno, el enuncia
 
 
 ## Casos de prueba de ejemplo
-| Entradas | Salidas |
-|:---------|:--------|
-| `-123`   | `True`  |
-| `123+`   | `True`  |
-| `+A12`   | `False` |
+| Entradas | Salidas                  |
+|:---------|:-------------------------|
+| `12:30`  | `No es un número válido` |
+| `3.14.16`| `No es un número válido` |
+| `+A12`   | `No es un número válido` |
+| `+123+`  | `No es un número válido` |
+| `1.50-`  | `Sí es un número válido` |
 
 ## Rúbrica
 Verifica tu entrega contra la rúbrica disponible en Canvas para maximizar tu calificación.
