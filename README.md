@@ -5,9 +5,11 @@
 ## Enunciado
 
 **Escribe un programa en Python que verifique si una cadena de texto se trata de un número real válido**, para lo cual debe cumplir con los siguientes requisitos:
-    1. No puede contener caracteres diferentes a dígitos, punto, signo más o signo menos.
-    2. Si tiene punto decimal, sólo puede ser uno.
-    3. Puede tener máximo un signo, positivo (+) o negativo (-), exclusivamente al principio o al final de la cadena.
+  1. No puede contener caracteres diferentes a dígitos, punto, signo más o signo menos.
+  
+  2. Si tiene punto decimal, sólo puede ser uno.
+  
+  3. Puede tener máximo un signo, positivo (+) o negativo (-), exclusivamente al principio o al final de la cadena.
 
 > ***Nota***: Como ya se mencionó, a las reglas anteriores, faltó añadir una más: que la cadena contenga al menos un dígito. *No debes codificar esta regla en tu solución*". 
 
