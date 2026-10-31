@@ -12,6 +12,8 @@
 > ***Nota***: Como ya se mencionó, a las reglas anteriores, faltó añadir una más: que la cadena contenga al menos un dígito. *No debes codificar esta regla en tu solución*". 
 
 ## Instrucciones
+- Elabora el análisis y el algoritmo antes de escribir el código. Utiliza un diagrama de flujo para representar tu algoritmo e ilustrar su lógica.
+
 - Codifica tu solución en el archivo [`validar_numero.py`](validar_numero.py).
    
 - Utiliza los siguientes ejemplos para dar formato a tus salidas:
