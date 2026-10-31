@@ -1,12 +1,17 @@
 """
-Generar autograding.json para ejercicio de verificar número.
+Generar archivo de casos de prueba para ejercicio de verificar número.
 """
 
 import json
-import random
+from pathlib import Path
 
-FILENAME = ".github/classroom/autograding.json"
 PROG_FILE = "validar_numero.py"
+YES_REGEX = r"(?i)^(?=.*\b(s[íi]|True)\b)(?!.*\b(no|False)\b).*"
+NO_REGEX = r"(?i)^(?!.*\b(s[íi]|True)\b)(?=.*\b(no|False)\b).*"
+
+base_dir = Path(".")
+tests_file = base_dir / "solution" / "test_cases.json"
+
 
 cases_true = [
     "123", "123.456", "-123.456", "+123.456",
@@ -26,22 +31,23 @@ tests = []
 for i, case in enumerate(cases, start=1):
     inp, outp = case
     if outp:
-        outp = "^(?=.*(sí |si |True))(?!.*(no |False)).*"
+        outp = YES_REGEX
     else:
-        outp = "^(?!.*(sí |si |True))(?=.*(no |False)).*"
+        outp = NO_REGEX
     name = f"Test{i:02d}: {inp}"
     entry = {
         "name": name,
-        "setup": "",
-        "run": "LANG=en_US.utf8 timeout 1m python " + PROG_FILE,
-        "input": inp,
-        "output": outp,
+        "type": "io",
+        "run": "python3 " + PROG_FILE,
+        "points": 1,
         "comparison": "regex",
-        "timeout": 1,
-        "points": 1
+        "input": inp,
+        "expected": outp,
         }
     tests.append(entry)
-tests = {"tests": tests}
 
-with open(FILENAME, "w") as f:
-    json.dump(tests, f, indent=2)
+# Añadir sangrías extra para copiar en archivo de Classroom 50
+clsrm50 = {"assignments": [{"tests": tests}]}
+
+with tests_file.open("w", encoding="utf-8") as f:
+    json.dump(clsrm50, f, indent=2, ensure_ascii=False)
